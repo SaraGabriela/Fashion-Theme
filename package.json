@@ -1,0 +1,27 @@
+{
+  "name": "fashion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://SaraGabriela@github.com/SaraGabriela/Lab-Examen-Fashion.git"
+  },
+  "author": "Sara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaraGabriela/Lab-Examen-Fashion/issues"
+  },
+  "homepage": "https://github.com/SaraGabriela/Lab-Examen-Fashion#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.1"
+  }
+}
