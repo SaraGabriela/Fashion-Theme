@@ -1,1 +1,108 @@
 /**{outline:solid 1px rgba(255,0,0,0.3);}*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato' !important; }
+
+p {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif !important; }
+
+.container-fluid {
+  padding: 0px !important; }
+
+.header {
+  background-color: #EEEEEE; }
+  .header .col-md-3 {
+    padding-top: 8px; }
+    .header .col-md-3 p {
+      text-align: center;
+      font-size: 12px;
+      color: #514949; }
+  .header button {
+    padding-top: 8px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 12px;
+    color: #514949; }
+
+.logo {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .logo .col-md-4:first-child {
+    padding-top: 15px; }
+    .logo .col-md-4:first-child p {
+      color: #514949;
+      line-height: 1px; }
+    .logo .col-md-4:first-child p:last-child {
+      font-size: 12px; }
+  .logo .search {
+    padding-top: 25px; }
+    .logo .search input {
+      border: 1px solid #EEEEEE;
+      border-radius: 5px;
+      padding: 5px; }
+
+ul.navega {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #EEEEEE;
+  margin-bottom: 0px; }
+  ul.navega li {
+    padding: 20px; }
+    ul.navega li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 700; }
+  ul.navega li.activo {
+    background-color: #E48080; }
+    ul.navega li.activo a {
+      color: #fff; }
+  ul.navega li.pull-right:last-child {
+    background-color: #514949; }
+    ul.navega li.pull-right:last-child button {
+      background-color: transparent;
+      border: none;
+      color: #fff; }
+    ul.navega li.pull-right:last-child button:focus {
+      border: none;
+      outline: none; }
+  ul.navega ul.dropdown-menu {
+    transform: translate(-200px, 15px);
+    width: 300px !important; }
+    ul.navega ul.dropdown-menu .suma .pull-left {
+      font-weight: 700; }
+    ul.navega ul.dropdown-menu .suma .pull-right {
+      color: #E48080; }
+
+#carrusel .cuadro {
+  border: 3px solid #fff;
+  padding: 15px; }
+
+.banner {
+  padding-top: 30px;
+  margin-bottom: 30px; }
+
+.sales1, .sales2 {
+  padding-bottom: 40px; }
+  .sales1 ul li, .sales2 ul li {
+    padding-top: 40px;
+    padding-right: 15px; }
+    .sales1 ul li a, .sales2 ul li a {
+      font-weight: 700;
+      color: #000;
+      text-decoration: none; }
+  .sales1 .thumbnail p:last-child, .sales2 .thumbnail p:last-child {
+    color: #E48080; }
+
+.clients {
+  background-image: url("../images/client-bg.jpg");
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  .clients ul li img {
+    max-width: 100px; }
+  .clients ul li {
+    margin-right: 15px; }
+
+.sales2 .row {
+  margin-top: 50px; }

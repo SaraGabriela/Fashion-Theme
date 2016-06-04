@@ -1,4 +1,339 @@
 extends ci/header.jade
+include ci/footer.jade
 block content
- .tab-pane.active#home(role="tabpanel")
-  p asfngjrngj es home                  
+ ul.navega.list-inline
+  li.activo
+   a(href="index.html" aria-controls="home") Home
+  li
+   a(href="contact.html" aria-controls="contact") Contact Us
+  li.pull-right
+   .dropdown
+    button#dLabel(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
+    ul.dropdown-menu(aria-labelledby="dLabel")
+     li.col-md-12
+      img.pull-left(src="../images/cart-1.jpg")
+      .carrito.pull-right
+       p Aliquam Consequat
+       p 1 x $500
+     li.col-md-12
+      img.pull-left(src="../images/cart-2.jpg")
+      .carrito.pull-right
+       p Quisque in Arcur
+       p 1 x $200
+     li.suma.col-md-12
+      .pull-left
+       p Sub-Total
+      .pull-right
+       p $700
+     li.suma.col-md-12
+      .pull-left
+       p Eco Tax (-2.00)
+      .pull-right
+       p $7.00
+     li.suma.col-md-12
+      .pull-left
+       p VAT (20%)
+      .pull-right
+       p $40.00 
+ #carrusel.carousel.slide(data-ride="carousel")
+  ol.carousel-indicators
+   li.active(data-target="carrusel" data-slide-to="0")
+   li(data-target="carrusel" data-slide-to="1")
+  .carousel-inner(role="listbox")
+   .item.active
+    img(src="../images/slider1.jpg")
+    .carousel-caption.text-center
+     .cuadro.text-center
+      h2 AUTUMN/WINTER LOOKBOOK
+     h4 -2016 COLLECTION- 	
+   .item
+    img(src="../images/slider2.jpg")
+    .carousel-caption
+     .cuadro.text-center
+      h2 AUTUMN/WINTER LOOKBOOK
+     h4 -2016 COLLECTION-
+  a.left.carousel-control(href="#carrusel" role="button" data-slide="prev")
+   span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+   span.sr-only previous
+  a.right.carousel-control(href="#carrusel" role="button" data-slide="next")
+   span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+   span.sr-only next
+ .banner
+  .col-sm-5
+   img.img-responsive(src="../images/banner1.jpg")
+  .col-sm-7
+   img.img-responsive(src="../images/banner2.jpg")
+ .sales1.container.text-center
+  ul.list-inline
+   li
+    a(href="#") LATEST
+   li
+    a(href="#") BESTSELLER 
+   li
+    a(href="#") SALE
+  .row
+   .col-sm-3
+    .thumbnail
+     img(src="../images/a1.jpg")
+     .caption
+      h4 Deliver Wide
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty
+      p $218.00
+   .col-sm-3
+    .thumbnail
+     img(src="../images/b1.jpg")
+     .caption
+      h4 Deliver Wide
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty
+      p $218.00
+   .col-sm-3
+    .thumbnail
+     img(src="../images/c1.jpg")
+     .caption
+      h4 Deliver Wide
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty
+      p $218.00
+   .col-sm-3
+    .thumbnail
+     img(src="../images/d1.jpg")
+     .caption
+      h4 Deliver Wide
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty
+      p $218.00
+ .clients.text-center
+  ul.list-inline
+   li
+    img(src="../images/client1.jpg")
+   li
+    img(src="../images/client2.jpg")
+   li
+    img(src="../images/client3.jpg")
+   li
+    img(src="../images/client4.jpg")
+   li
+    img(src="../images/client5.jpg")
+   li
+    img(src="../images/client6.jpg")
+ .sales2.container.text-center
+  ul.list-inline
+   li
+    a(href="#") CLOTHING
+   li
+    a(href="#") EQUIPMENTS 
+   li
+    a(href="#") JEWELLERY
+  .row
+   .col-md-4
+    .media
+     .media-left
+      img.media-object.image-responsive(style="width:100px;" src="../images/a2.jpg")
+     .media-body
+      h4.media-heading Deliver Wide
+      ul.list-inline
+       li $242.00
+       li $218.00
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty       
+      button Add to Cart
+    .media
+     .media-left
+      img.media-object.image-responsive(style="width:100px;" src="../images/c2.jpg")
+     .media-body
+      h4.media-heading Deliver Wide
+      p $218.00
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty       
+      button Add to Cart
+   .col-md-4
+    .media
+     .media-left
+      img.media-object.image-responsive(style="width:100px;" src="../images/d2.jpg")
+     .media-body
+      h4.media-heading Deliver Wide
+      p $218.00
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty       
+      button Add to Cart
+    .media
+     .media-left
+      img.media-object.image-responsive(style="width:100px;" src="../images/cart-1.jpg")
+     .media-body
+      h4.media-heading Deliver Wide
+      ul.list-inline
+       li $242.00
+       li $218.00
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty       
+      button Add to Cart
+   .col-md-4
+    .media
+     .media-left
+      img.media-object.image-responsive(style="width:100px;" src="../images/g2.jpg")
+     .media-body
+      h4.media-heading Deliver Wide
+      p $218.00
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty       
+      button Add to Cart
+    .media
+     .media-left
+      img.media-object.image-responsive(style="width:100px;" src="../images/e2.jpg")
+     .media-body
+      h4.media-heading Deliver Wide
+      p $218.00
+      ul.list-inline
+       li
+        i.glyphicon.glyphicon-star
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star 
+       li
+        i.glyphicon.glyphicon-star-empty
+       li
+        i.glyphicon.glyphicon-star-empty       
+      button Add to Cart
+ .container-fluid.blog
+ p.text-center BLOG
+ .container
+   .col-sm-3
+    .thumbnail
+     img(src="../images/blog2.jpg")
+     .caption
+      h5 THE SAMPLE HEADING TITLE
+      P 27/11/2015
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...
+      a(href="#") Read more... 
+   .col-sm-3
+    .thumbnail
+     img(src="../images/blog1.jpg")
+     .caption
+      h5 THE SAMPLE HEADING TITLE
+      P 27/11/2015
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...
+      a(href="#") Read more... 
+   .col-sm-3
+    .thumbnail
+     img(src="../images/blog2.jpg")
+     .caption
+      h5 THE SAMPLE HEADING TITLE
+      P 27/11/2015
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...
+      a(href="#") Read more... 
+   .col-sm-3
+    .thumbnail
+     img(src="../images/blog3.jpg")
+     .caption
+      h5 THE SAMPLE HEADING TITLE
+      P 27/11/2015
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...
+      a(href="#") Read more... 
+ .botones.container-fluid
+  .container
+   .col-md-4
+    .options
+     .col-md-1.pull-left
+      i.glyphicon.glyphicon-star
+     .col-md-10.pull-right
+      p ORDER NOW
+      P Call us:(0123)456 789 
+   .col-md-4
+    .options
+     .col-md-1.pull-left
+      i.glyphicon.glyphicon-star
+     .col-md-10.pull-right
+      p FREE WORLDWIDE SHIPPING
+      P On order over $100
+   .col-md-4
+    .options
+     .col-md-1.pull-left
+      i.glyphicon.glyphicon-star
+     .col-md-10.pull-right
+      p 30 DAYS MONEY BACK 100%
+      P Satisfaction Guarantee
+ +footer                                                                                                                                           	                       

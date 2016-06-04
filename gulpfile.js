@@ -10,7 +10,7 @@ gulp.task('compila_sass', function () {
 });
 
 gulp.task('compila_jade', function () {
-  return gulp.src('./jade/*.jade') //Busca tu archivo scss
+  return gulp.src('./jade/index.jade') //Busca tu archivo scss
     .pipe(gulpJade()) //Llama a variable
     .pipe(gulp.dest('./public')); //Crea css
 });
